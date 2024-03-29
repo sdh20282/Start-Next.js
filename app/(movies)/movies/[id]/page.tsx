@@ -16,6 +16,8 @@ export default async function MovieDetail({
         <MovieInfo id={id} />
       </Suspense>
 
+      <h4>Videos</h4>
+
       <Suspense fallback={<h1>Loading movie videos</h1>}>
         <MovieVideos id={id} />
       </Suspense>
